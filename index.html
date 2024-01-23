@@ -17,21 +17,21 @@
 <body>
 <div id="big-container">
   <img src="images/bg-pattern.svg" class="background-pattern">
- 
-    <img src="images/pattern-circles.svg" class="circles">
-  
+
+
   <div id="container">
     <div id="title-part">
+      <img src="images/pattern-circles.svg" class="circles">
+
       <h1>Simple, traffic-based pricing</h1>
       <p>Sign-up for our 30-day trial. <span class="break">No credit card required.</span></p>
     </div>
   <div id="main-part-container">
-    <div id="main-part">
+    <form id="main-part">
       <div id="display-price-pageviews">
         <div class="pageviews">100K PAGEVIEWS</div>
-        <input type="range" min="1" max="101" value="50" id="my-slider">
-        <div class="progress-button"><img class="progress-img" src="images/icon-slider.svg" id="drag-button"></div>
-        <div class="price"><p class="price-number">$16.00</p><span>/month</span></div>
+        <input class="pricing-range" type="range" name="range" id="range" min="1" max="5" value="3" step="1">
+        <div class="price"><p class="price-number">$16.00</p><span class="frequency">/month</span></div>
       </div>
 
       <div id="monthly-yearly">
@@ -55,18 +55,14 @@
             <li>100% data ownership</li>
             <li>Email reports</li>
           </ul>
-          <button>Start my trial</button>
+          <button type="submit">Start my trial</button>
         </div>
-    </div>
+      </form>
   </div>
 
   </div>
 </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
